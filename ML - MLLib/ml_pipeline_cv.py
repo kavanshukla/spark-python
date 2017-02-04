@@ -8,7 +8,7 @@ from pyspark.ml.tuning import CrossValidator, ParamGridBuilder
 
 
 conf = SparkConf().setAppName("MLPipeline")
-#sc = SparkContext(conf=conf)
+sc = SparkContext(conf=conf)
 
 # Read training data as a DataFrame
 sqlCt = SQLContext(sc)
